@@ -23,6 +23,7 @@ struct Network {
             switch result {
             case let .success(response):
                 do{
+                    //如果数据返回成功则直接将结果转为JSON
 //                    try response.filterSuccessfulStatusCodes()
                     let json = try JSON(response.mapJSON())
                     successCallBack(json)
@@ -31,7 +32,14 @@ struct Network {
                     errorCallBack((error as! MoyaError).response!.statusCode)
                 }
             case let .failure(error):
+                //如果连接异常，则返沪错误信息（必要时还可以将尝试重新发起请求）
+                //if target.shouldRetry {
+                //    retryWhenReachable(target, successCallback, errorCallback,
+                //      failureCallback)
+                //}
+                //else {
                 failureCallBack(error)
+                //}
             }
         }
     }
