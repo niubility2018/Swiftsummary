@@ -1,0 +1,6 @@
+framework module Pods_swiftsummay {
+  umbrella header "Pods-swiftsummay-umbrella.h"
+
+  export *
+  module * { export * }
+}

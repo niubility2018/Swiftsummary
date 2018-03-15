@@ -7,14 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C484116205A3A10004F53BF /* DouBanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484115205A3A10004F53BF /* DouBanAPI.swift */; };
+		1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484117205A5200004F53BF /* HttpbinAPI.swift */; };
+		1C48411A205A572C004F53BF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484119205A572C004F53BF /* Network.swift */; };
 		1C4D17762059236500001419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D17752059236500001419 /* AppDelegate.swift */; };
 		1C4D17782059236600001419 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D17772059236600001419 /* ViewController.swift */; };
 		1C4D177B2059236600001419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D17792059236600001419 /* Main.storyboard */; };
 		1C4D177D2059236600001419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177C2059236600001419 /* Assets.xcassets */; };
 		1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177E2059236600001419 /* LaunchScreen.storyboard */; };
+		62BAC480D26DEA1BCA4B65F0 /* Pods_swiftsummay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1C484115205A3A10004F53BF /* DouBanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanAPI.swift; sourceTree = "<group>"; };
+		1C484117205A5200004F53BF /* HttpbinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpbinAPI.swift; sourceTree = "<group>"; };
+		1C484119205A572C004F53BF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		1C4D17722059236500001419 /* swiftsummay.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = swiftsummay.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C4D17752059236500001419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1C4D17772059236600001419 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +29,9 @@
 		1C4D177C2059236600001419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4D177F2059236600001419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4D17812059236600001419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D62A461A11AA5B1C912D3BF /* Pods-swiftsummay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftsummay.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay.release.xcconfig"; sourceTree = "<group>"; };
+		5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftsummay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7634766B891A0EF4F19EC585 /* Pods-swiftsummay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftsummay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62BAC480D26DEA1BCA4B65F0 /* Pods_swiftsummay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +51,8 @@
 			children = (
 				1C4D17742059236500001419 /* swiftsummay */,
 				1C4D17732059236500001419 /* Products */,
+				B4C712FAE4E830BC5218AD2C /* Pods */,
+				431AEE4820B437C2F63C71A9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,12 +69,32 @@
 			children = (
 				1C4D17752059236500001419 /* AppDelegate.swift */,
 				1C4D17772059236600001419 /* ViewController.swift */,
+				1C484115205A3A10004F53BF /* DouBanAPI.swift */,
+				1C484117205A5200004F53BF /* HttpbinAPI.swift */,
+				1C484119205A572C004F53BF /* Network.swift */,
 				1C4D17792059236600001419 /* Main.storyboard */,
 				1C4D177C2059236600001419 /* Assets.xcassets */,
 				1C4D177E2059236600001419 /* LaunchScreen.storyboard */,
 				1C4D17812059236600001419 /* Info.plist */,
 			);
 			path = swiftsummay;
+			sourceTree = "<group>";
+		};
+		431AEE4820B437C2F63C71A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B4C712FAE4E830BC5218AD2C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7634766B891A0EF4F19EC585 /* Pods-swiftsummay.debug.xcconfig */,
+				2D62A461A11AA5B1C912D3BF /* Pods-swiftsummay.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1C4D17842059236600001419 /* Build configuration list for PBXNativeTarget "swiftsummay" */;
 			buildPhases = (
+				126C2205499A8A40C5AA238E /* [CP] Check Pods Manifest.lock */,
 				1C4D176E2059236500001419 /* Sources */,
 				1C4D176F2059236500001419 /* Frameworks */,
 				1C4D17702059236500001419 /* Resources */,
+				4D82C6B36658F939C5E614CD /* [CP] Embed Pods Frameworks */,
+				32F977E7EF05C7DF77BAC93D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +167,75 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		126C2205499A8A40C5AA238E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-swiftsummay-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		32F977E7EF05C7DF77BAC93D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4D82C6B36658F939C5E614CD /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1C4D176E2059236500001419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C48411A205A572C004F53BF /* Network.swift in Sources */,
 				1C4D17782059236600001419 /* ViewController.swift in Sources */,
+				1C484116205A3A10004F53BF /* DouBanAPI.swift in Sources */,
+				1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */,
 				1C4D17762059236500001419 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +371,13 @@
 		};
 		1C4D17852059236600001419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7634766B891A0EF4F19EC585 /* Pods-swiftsummay.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 475AM2DC65;
+				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = swiftsummay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.golfd.swiftsummay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -287,11 +388,13 @@
 		};
 		1C4D17862059236600001419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D62A461A11AA5B1C912D3BF /* Pods-swiftsummay.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 475AM2DC65;
+				DEVELOPMENT_TEAM = 2QC668LVNU;
 				INFOPLIST_FILE = swiftsummay/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.golfd.swiftsummay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
