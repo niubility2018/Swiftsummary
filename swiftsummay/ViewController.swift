@@ -42,10 +42,12 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //                }
 //            }
 //        }
-        Network.request(DouBan.channels, success: { (json) in
-            self.channels = json["channels"].arrayValue
-            DispatchQueue.main.async {
-                self.tableView.reloadData()
+        Network.request(Httpbin.channels, success: { (json) in
+            if json != JSON.null{
+                self.channels = json["channels"].arrayValue
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
             }
         }, error: { (statusCode) in
             //服务器报错等问题
@@ -88,12 +90,19 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //            }
 //        }
         
-        Network.request(DouBan.playlist(channelId), success: { (json) in
-            let music = json["song"].arrayValue[0]
-            let artist = music["artist"].stringValue
-            let title = music["title"].stringValue
-            let message = "歌手：\(artist)\n歌曲：\(title)"
-            self.showAlert(title: channelName, message: message)
+        Network.request(Httpbin.playlist(channelId), success: { (json) in
+            if json != JSON.null{
+                print(json)
+                if json["song"].arrayValue.count > 0 {
+                    let music = json["song"].arrayValue[0]
+                    let artist = music["artist"].stringValue
+                    let title = music["title"].stringValue
+                    let message = "歌手：\(artist)\n歌曲：\(title)"
+                    DispatchQueue.main.async {
+                        self.showAlert(title: channelName, message: message)
+                    }
+                }
+            }
         }, error: { (statusCode) in
             //服务器报错等问题
             print("请求错误！错误码：\(statusCode)")

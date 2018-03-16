@@ -12,9 +12,9 @@ import Moya
 import SwiftyJSON
 
 struct Network {
-    static let provider = MoyaProvider<DouBan>()
+    static let provider = MoyaProvider<Httpbin>()
     static func request(
-        _ target: DouBan,
+        _ target: Httpbin,
         success successCallBack: @escaping (JSON) -> Void,
         error errorCallBack: @escaping (Int) -> Void,
         failure failureCallBack: @escaping (MoyaError) -> Void
@@ -32,14 +32,14 @@ struct Network {
                     errorCallBack((error as! MoyaError).response!.statusCode)
                 }
             case let .failure(error):
-                //如果连接异常，则返沪错误信息（必要时还可以将尝试重新发起请求）
-                //if target.shouldRetry {
-                //    retryWhenReachable(target, successCallback, errorCallback,
-                //      failureCallback)
-                //}
-                //else {
-                failureCallBack(error)
-                //}
+                //如果连接异常，则返回错误信息（必要时还可以将尝试重新发起请求）
+//                if target.shouldRetry {
+//                    retryWhenReachable(target, successCallBack, errorCallBack,
+//                                       failureCallBack)
+//                }
+//                else {
+                    failureCallBack(error)
+//                }
             }
         }
     }

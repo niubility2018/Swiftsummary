@@ -40,7 +40,12 @@ extension DouBan: TargetType{
     }
     //请求类型
     public var method: Moya.Method {
-        return .get
+        switch self {
+        case .channels:
+            return .get
+        default:
+            return .get
+        }
     }
     //这个就是做单元测试模拟的数据，只会在单元测试文件中有作用）
     public var sampleData: Data {
