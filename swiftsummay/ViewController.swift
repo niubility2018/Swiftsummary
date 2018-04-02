@@ -56,6 +56,17 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             //没有网络等问题
             print("请求失败！错误信息：\(error.errorDescription ?? "")")
         }
+        
+        
+        let remind = 2 % 6
+        
+        print("余数---------------\(remind)")
+        
+        
+        
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -74,9 +85,11 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let channelName = channels[indexPath.row]["name"].stringValue
-        let channelId = channels[indexPath.row]["channel_id"].stringValue
-        
+//        let channelName = channels[indexPath.row]["name"].stringValue
+//        let channelId = channels[indexPath.row]["channel_id"].stringValue
+        /*
+         方法1
+         */
 //        DouBanProvider.request(DouBan.playlist(channelId)) { (result) in
 //            if case let.success(response) = result {
 //                let data = try? response.mapJSON()
@@ -89,27 +102,33 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //                self.showAlert(title: channelName, message: message)
 //            }
 //        }
+        /*
+         方法2
+         */
+//        Network.request(Httpbin.playlist(channelId), success: { (json) in
+//            if json != JSON.null{
+//                print(json)
+//                if json["song"].arrayValue.count > 0 {
+//                    let music = json["song"].arrayValue[0]
+//                    let artist = music["artist"].stringValue
+//                    let title = music["title"].stringValue
+//                    let message = "歌手：\(artist)\n歌曲：\(title)"
+//                    DispatchQueue.main.async {
+//                        self.showAlert(title: channelName, message: message)
+//                    }
+//                }
+//            }
+//        }, error: { (statusCode) in
+//            //服务器报错等问题
+//            print("请求错误！错误码：\(statusCode)")
+//        }) { (error) in
+//            //没有网络等问题
+//            print("请求失败！错误信息：\(error.errorDescription ?? "")")
+//        }
         
-        Network.request(Httpbin.playlist(channelId), success: { (json) in
-            if json != JSON.null{
-                print(json)
-                if json["song"].arrayValue.count > 0 {
-                    let music = json["song"].arrayValue[0]
-                    let artist = music["artist"].stringValue
-                    let title = music["title"].stringValue
-                    let message = "歌手：\(artist)\n歌曲：\(title)"
-                    DispatchQueue.main.async {
-                        self.showAlert(title: channelName, message: message)
-                    }
-                }
-            }
-        }, error: { (statusCode) in
-            //服务器报错等问题
-            print("请求错误！错误码：\(statusCode)")
-        }) { (error) in
-            //没有网络等问题
-            print("请求失败！错误信息：\(error.errorDescription ?? "")")
-        }
+        let bavc = CollectionViewController()
+        self.navigationController?.pushViewController(bavc, animated: true)
+        
     }
     
     //显示消息
