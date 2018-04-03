@@ -126,7 +126,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //            print("请求失败！错误信息：\(error.errorDescription ?? "")")
 //        }
         
-        let bavc = JuZhenViewController()
+        let bavc = ViewFactoryController()
         self.navigationController?.pushViewController(bavc, animated: true)
         
     }

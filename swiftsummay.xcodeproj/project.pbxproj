@@ -17,6 +17,10 @@
 		1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177E2059236600001419 /* LaunchScreen.storyboard */; };
 		1C539B0020731E6400EAA9FF /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539AFF20731E6400EAA9FF /* TileView.swift */; };
 		1C539B02207322D900EAA9FF /* JuZhenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B01207322D900EAA9FF /* JuZhenViewController.swift */; };
+		1C539B0420732AEA00EAA9FF /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B0320732AEA00EAA9FF /* ScoreView.swift */; };
+		1C539B062073444300EAA9FF /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B052073444300EAA9FF /* ScoreViewController.swift */; };
+		1C539B08207346F400EAA9FF /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B07207346F400EAA9FF /* ViewFactory.swift */; };
+		1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B092073481F00EAA9FF /* ViewFactoryController.swift */; };
 		1C7A32BF2071F859009EB78F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32BD2071F858009EB78F /* README.md */; };
 		1C7A32C02071F859009EB78F /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32BE2071F858009EB78F /* XMLReader.m */; };
 		1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32C12071F921009EB78F /* XmlReaderController.swift */; };
@@ -68,6 +72,10 @@
 		1C4D17812059236600001419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C539AFF20731E6400EAA9FF /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		1C539B01207322D900EAA9FF /* JuZhenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuZhenViewController.swift; sourceTree = "<group>"; };
+		1C539B0320732AEA00EAA9FF /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
+		1C539B052073444300EAA9FF /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		1C539B07207346F400EAA9FF /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
+		1C539B092073481F00EAA9FF /* ViewFactoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryController.swift; sourceTree = "<group>"; };
 		1C7A32BC2071F858009EB78F /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		1C7A32BD2071F858009EB78F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1C7A32BE2071F858009EB78F /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
@@ -169,6 +177,10 @@
 			children = (
 				1C539AFF20731E6400EAA9FF /* TileView.swift */,
 				1C539B01207322D900EAA9FF /* JuZhenViewController.swift */,
+				1C539B0320732AEA00EAA9FF /* ScoreView.swift */,
+				1C539B052073444300EAA9FF /* ScoreViewController.swift */,
+				1C539B07207346F400EAA9FF /* ViewFactory.swift */,
+				1C539B092073481F00EAA9FF /* ViewFactoryController.swift */,
 			);
 			path = day3;
 			sourceTree = "<group>";
@@ -423,6 +435,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */,
+				1C539B062073444300EAA9FF /* ScoreViewController.swift in Sources */,
 				1CB3AEB62071BF700096C403 /* CollectionViewController.swift in Sources */,
 				1C48411A205A572C004F53BF /* Network.swift in Sources */,
 				1C993785206E1D260007A2D8 /* Chiken.swift in Sources */,
@@ -433,13 +446,16 @@
 				1C7A32C02071F859009EB78F /* XMLReader.m in Sources */,
 				1C539B0020731E6400EAA9FF /* TileView.swift in Sources */,
 				1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */,
+				1C539B0420732AEA00EAA9FF /* ScoreView.swift in Sources */,
 				1C993781206E1B0A0007A2D8 /* String.swift in Sources */,
+				1C539B08207346F400EAA9FF /* ViewFactory.swift in Sources */,
 				1C4D17762059236500001419 /* AppDelegate.swift in Sources */,
 				1C7A32CC2071FFBA009EB78F /* GDataXMLNode.m in Sources */,
 				1C993783206E1CEF0007A2D8 /* Person.swift in Sources */,
 				1C993789206E35320007A2D8 /* CountDownController.swift in Sources */,
 				1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */,
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
+				1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */,
 				1C99377F206DD18B0007A2D8 /* BasicTheoryController.swift in Sources */,
 				1C7A32C52071FA9E009EB78F /* Constant.m in Sources */,
 			);
