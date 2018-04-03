@@ -15,6 +15,26 @@
 		1C4D177B2059236600001419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D17792059236600001419 /* Main.storyboard */; };
 		1C4D177D2059236600001419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177C2059236600001419 /* Assets.xcassets */; };
 		1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177E2059236600001419 /* LaunchScreen.storyboard */; };
+		1C539B0020731E6400EAA9FF /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539AFF20731E6400EAA9FF /* TileView.swift */; };
+		1C539B02207322D900EAA9FF /* JuZhenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B01207322D900EAA9FF /* JuZhenViewController.swift */; };
+		1C7A32BF2071F859009EB78F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32BD2071F858009EB78F /* README.md */; };
+		1C7A32C02071F859009EB78F /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32BE2071F858009EB78F /* XMLReader.m */; };
+		1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32C12071F921009EB78F /* XmlReaderController.swift */; };
+		1C7A32C52071FA9E009EB78F /* Constant.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32C42071FA9E009EB78F /* Constant.m */; };
+		1C7A32C82071FC26009EB78F /* users.xml in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32C72071FC26009EB78F /* users.xml */; };
+		1C7A32CC2071FFBA009EB78F /* GDataXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32CB2071FFBA009EB78F /* GDataXMLNode.m */; };
+		1C7A32CE2071FFDD009EB78F /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C7A32CD2071FFDD009EB78F /* libxml2.2.tbd */; };
+		1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32D2207210CF009EB78F /* JSONViewController.swift */; };
+		1C7A32DF20722EF0009EB78F /* iconfont.js in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32D520722EF0009EB78F /* iconfont.js */; };
+		1C7A32E020722EF0009EB78F /* demo.css in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32D620722EF0009EB78F /* demo.css */; };
+		1C7A32E120722EF0009EB78F /* iconfont.woff in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32D720722EF0009EB78F /* iconfont.woff */; };
+		1C7A32E220722EF0009EB78F /* iconfont.eot in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32D820722EF0009EB78F /* iconfont.eot */; };
+		1C7A32E320722EF0009EB78F /* demo_fontclass.html in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32D920722EF0009EB78F /* demo_fontclass.html */; };
+		1C7A32E420722EF0009EB78F /* iconfont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32DA20722EF0009EB78F /* iconfont.ttf */; };
+		1C7A32E520722EF0009EB78F /* demo_unicode.html in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32DB20722EF0009EB78F /* demo_unicode.html */; };
+		1C7A32E620722EF0009EB78F /* iconfont.svg in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32DC20722EF0009EB78F /* iconfont.svg */; };
+		1C7A32E720722EF0009EB78F /* iconfont.css in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32DD20722EF0009EB78F /* iconfont.css */; };
+		1C7A32E820722EF0009EB78F /* demo_symbol.html in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32DE20722EF0009EB78F /* demo_symbol.html */; };
 		1C99377F206DD18B0007A2D8 /* BasicTheoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C99377E206DD18B0007A2D8 /* BasicTheoryController.swift */; };
 		1C993781206E1B0A0007A2D8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C993780206E1B090007A2D8 /* String.swift */; };
 		1C993783206E1CEF0007A2D8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C993782206E1CEF0007A2D8 /* Person.swift */; };
@@ -46,6 +66,30 @@
 		1C4D177C2059236600001419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4D177F2059236600001419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4D17812059236600001419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C539AFF20731E6400EAA9FF /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		1C539B01207322D900EAA9FF /* JuZhenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuZhenViewController.swift; sourceTree = "<group>"; };
+		1C7A32BC2071F858009EB78F /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
+		1C7A32BD2071F858009EB78F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		1C7A32BE2071F858009EB78F /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
+		1C7A32C12071F921009EB78F /* XmlReaderController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlReaderController.swift; sourceTree = "<group>"; };
+		1C7A32C32071FA9E009EB78F /* Constant.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constant.h; sourceTree = "<group>"; };
+		1C7A32C42071FA9E009EB78F /* Constant.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Constant.m; sourceTree = "<group>"; };
+		1C7A32C62071FB8A009EB78F /* swiftsummay-bridge-oc.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swiftsummay-bridge-oc.h"; sourceTree = "<group>"; };
+		1C7A32C72071FC26009EB78F /* users.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = users.xml; sourceTree = "<group>"; };
+		1C7A32CA2071FFB9009EB78F /* GDataXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GDataXMLNode.h; sourceTree = "<group>"; };
+		1C7A32CB2071FFBA009EB78F /* GDataXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GDataXMLNode.m; sourceTree = "<group>"; };
+		1C7A32CD2071FFDD009EB78F /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		1C7A32D2207210CF009EB78F /* JSONViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JSONViewController.swift; sourceTree = "<group>"; };
+		1C7A32D520722EF0009EB78F /* iconfont.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = iconfont.js; sourceTree = "<group>"; };
+		1C7A32D620722EF0009EB78F /* demo.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = demo.css; sourceTree = "<group>"; };
+		1C7A32D720722EF0009EB78F /* iconfont.woff */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.woff; sourceTree = "<group>"; };
+		1C7A32D820722EF0009EB78F /* iconfont.eot */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.eot; sourceTree = "<group>"; };
+		1C7A32D920722EF0009EB78F /* demo_fontclass.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_fontclass.html; sourceTree = "<group>"; };
+		1C7A32DA20722EF0009EB78F /* iconfont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = iconfont.ttf; sourceTree = "<group>"; };
+		1C7A32DB20722EF0009EB78F /* demo_unicode.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_unicode.html; sourceTree = "<group>"; };
+		1C7A32DC20722EF0009EB78F /* iconfont.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iconfont.svg; sourceTree = "<group>"; };
+		1C7A32DD20722EF0009EB78F /* iconfont.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = iconfont.css; sourceTree = "<group>"; };
+		1C7A32DE20722EF0009EB78F /* demo_symbol.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = demo_symbol.html; sourceTree = "<group>"; };
 		1C99377E206DD18B0007A2D8 /* BasicTheoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTheoryController.swift; sourceTree = "<group>"; };
 		1C993780206E1B090007A2D8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1C993782206E1CEF0007A2D8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -73,6 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7A32CE2071FFDD009EB78F /* libxml2.2.tbd in Frameworks */,
 				62BAC480D26DEA1BCA4B65F0 /* Pods_swiftsummay.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -101,6 +146,10 @@
 		1C4D17742059236500001419 /* swiftsummay */ = {
 			isa = PBXGroup;
 			children = (
+				1C539AFE20731AE000EAA9FF /* day3 */,
+				1C7A32D420722EF0009EB78F /* my_test_font */,
+				1C7A32BB2071F858009EB78F /* third */,
+				1C7A32BA2071DB25009EB78F /* day2 */,
 				1C993779206DCED80007A2D8 /* day1 */,
 				1C4D17752059236500001419 /* AppDelegate.swift */,
 				1C4D17772059236600001419 /* ViewController.swift */,
@@ -113,6 +162,57 @@
 				1C4D17812059236600001419 /* Info.plist */,
 			);
 			path = swiftsummay;
+			sourceTree = "<group>";
+		};
+		1C539AFE20731AE000EAA9FF /* day3 */ = {
+			isa = PBXGroup;
+			children = (
+				1C539AFF20731E6400EAA9FF /* TileView.swift */,
+				1C539B01207322D900EAA9FF /* JuZhenViewController.swift */,
+			);
+			path = day3;
+			sourceTree = "<group>";
+		};
+		1C7A32BA2071DB25009EB78F /* day2 */ = {
+			isa = PBXGroup;
+			children = (
+				1C7A32C12071F921009EB78F /* XmlReaderController.swift */,
+				1C7A32D2207210CF009EB78F /* JSONViewController.swift */,
+				1C7A32C32071FA9E009EB78F /* Constant.h */,
+				1C7A32C42071FA9E009EB78F /* Constant.m */,
+				1C7A32C62071FB8A009EB78F /* swiftsummay-bridge-oc.h */,
+			);
+			path = day2;
+			sourceTree = "<group>";
+		};
+		1C7A32BB2071F858009EB78F /* third */ = {
+			isa = PBXGroup;
+			children = (
+				1C7A32CA2071FFB9009EB78F /* GDataXMLNode.h */,
+				1C7A32CB2071FFBA009EB78F /* GDataXMLNode.m */,
+				1C7A32C72071FC26009EB78F /* users.xml */,
+				1C7A32BC2071F858009EB78F /* XMLReader.h */,
+				1C7A32BD2071F858009EB78F /* README.md */,
+				1C7A32BE2071F858009EB78F /* XMLReader.m */,
+			);
+			path = third;
+			sourceTree = "<group>";
+		};
+		1C7A32D420722EF0009EB78F /* my_test_font */ = {
+			isa = PBXGroup;
+			children = (
+				1C7A32D520722EF0009EB78F /* iconfont.js */,
+				1C7A32D620722EF0009EB78F /* demo.css */,
+				1C7A32D720722EF0009EB78F /* iconfont.woff */,
+				1C7A32D820722EF0009EB78F /* iconfont.eot */,
+				1C7A32D920722EF0009EB78F /* demo_fontclass.html */,
+				1C7A32DA20722EF0009EB78F /* iconfont.ttf */,
+				1C7A32DB20722EF0009EB78F /* demo_unicode.html */,
+				1C7A32DC20722EF0009EB78F /* iconfont.svg */,
+				1C7A32DD20722EF0009EB78F /* iconfont.css */,
+				1C7A32DE20722EF0009EB78F /* demo_symbol.html */,
+			);
+			path = my_test_font;
 			sourceTree = "<group>";
 		};
 		1C993779206DCED80007A2D8 /* day1 */ = {
@@ -150,6 +250,7 @@
 		431AEE4820B437C2F63C71A9 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1C7A32CD2071FFDD009EB78F /* libxml2.2.tbd */,
 				5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */,
 			);
 			name = Frameworks;
@@ -230,13 +331,25 @@
 				1CB3AEC72071CBC10096C403 /* html.png in Resources */,
 				1CB3AEC92071CBC10096C403 /* react.png in Resources */,
 				1CB3AEC82071CBC10096C403 /* swift.png in Resources */,
+				1C7A32DF20722EF0009EB78F /* iconfont.js in Resources */,
+				1C7A32E320722EF0009EB78F /* demo_fontclass.html in Resources */,
+				1C7A32E220722EF0009EB78F /* iconfont.eot in Resources */,
+				1C7A32E020722EF0009EB78F /* demo.css in Resources */,
 				1CB3AECA2071CBC10096C403 /* php.png in Resources */,
+				1C7A32E420722EF0009EB78F /* iconfont.ttf in Resources */,
+				1C7A32E720722EF0009EB78F /* iconfont.css in Resources */,
+				1C7A32E120722EF0009EB78F /* iconfont.woff in Resources */,
+				1C7A32E520722EF0009EB78F /* demo_unicode.html in Resources */,
+				1C7A32BF2071F859009EB78F /* README.md in Resources */,
 				1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */,
+				1C7A32C82071FC26009EB78F /* users.xml in Resources */,
 				1CB3AEC42071CBC10096C403 /* ruby.png in Resources */,
 				1CB3AEC62071CBC10096C403 /* js.png in Resources */,
+				1C7A32E620722EF0009EB78F /* iconfont.svg in Resources */,
 				1C4D177D2059236600001419 /* Assets.xcassets in Resources */,
 				1C4D177B2059236600001419 /* Main.storyboard in Resources */,
 				1CB3AEC32071CBC10096C403 /* xcode.png in Resources */,
+				1C7A32E820722EF0009EB78F /* demo_symbol.html in Resources */,
 				1CB3AEC52071CBC10096C403 /* java.png in Resources */,
 				1CB3AECB2071CBC10096C403 /* c#.png in Resources */,
 			);
@@ -309,19 +422,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */,
 				1CB3AEB62071BF700096C403 /* CollectionViewController.swift in Sources */,
 				1C48411A205A572C004F53BF /* Network.swift in Sources */,
 				1C993785206E1D260007A2D8 /* Chiken.swift in Sources */,
+				1C539B02207322D900EAA9FF /* JuZhenViewController.swift in Sources */,
 				1C4D17782059236600001419 /* ViewController.swift in Sources */,
 				1C484116205A3A10004F53BF /* DouBanAPI.swift in Sources */,
 				1C993787206E2F1A0007A2D8 /* CoreMotionController.swift in Sources */,
+				1C7A32C02071F859009EB78F /* XMLReader.m in Sources */,
+				1C539B0020731E6400EAA9FF /* TileView.swift in Sources */,
 				1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */,
 				1C993781206E1B0A0007A2D8 /* String.swift in Sources */,
 				1C4D17762059236500001419 /* AppDelegate.swift in Sources */,
+				1C7A32CC2071FFBA009EB78F /* GDataXMLNode.m in Sources */,
 				1C993783206E1CEF0007A2D8 /* Person.swift in Sources */,
 				1C993789206E35320007A2D8 /* CountDownController.swift in Sources */,
+				1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */,
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
 				1C99377F206DD18B0007A2D8 /* BasicTheoryController.swift in Sources */,
+				1C7A32C52071FA9E009EB78F /* Constant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -460,14 +580,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = swiftsummay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.golfd.swiftsummay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/xubojoy/Documents/Swiftsummary/swiftsummay/day2/swiftsummay-bridge-oc.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -480,14 +602,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
+				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
 				INFOPLIST_FILE = swiftsummay/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = cn.golfd.swiftsummay;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/xubojoy/Documents/Swiftsummary/swiftsummay/day2/swiftsummay-bridge-oc.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
