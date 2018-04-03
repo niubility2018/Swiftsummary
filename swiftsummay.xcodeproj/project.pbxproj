@@ -21,6 +21,11 @@
 		1C539B062073444300EAA9FF /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B052073444300EAA9FF /* ScoreViewController.swift */; };
 		1C539B08207346F400EAA9FF /* ViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B07207346F400EAA9FF /* ViewFactory.swift */; };
 		1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B092073481F00EAA9FF /* ViewFactoryController.swift */; };
+		1C539B102073613900EAA9FF /* GuideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B0F2073613900EAA9FF /* GuideViewController.swift */; };
+		1C539B142073639100EAA9FF /* 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C539B112073639000EAA9FF /* 3.png */; };
+		1C539B152073639100EAA9FF /* 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C539B122073639100EAA9FF /* 1.png */; };
+		1C539B162073639100EAA9FF /* 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 1C539B132073639100EAA9FF /* 2.png */; };
+		1C539B182073749C00EAA9FF /* MusicPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B172073749C00EAA9FF /* MusicPlayViewController.swift */; };
 		1C7A32BF2071F859009EB78F /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 1C7A32BD2071F858009EB78F /* README.md */; };
 		1C7A32C02071F859009EB78F /* XMLReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32BE2071F858009EB78F /* XMLReader.m */; };
 		1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7A32C12071F921009EB78F /* XmlReaderController.swift */; };
@@ -76,6 +81,11 @@
 		1C539B052073444300EAA9FF /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
 		1C539B07207346F400EAA9FF /* ViewFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactory.swift; sourceTree = "<group>"; };
 		1C539B092073481F00EAA9FF /* ViewFactoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewFactoryController.swift; sourceTree = "<group>"; };
+		1C539B0F2073613900EAA9FF /* GuideViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideViewController.swift; sourceTree = "<group>"; };
+		1C539B112073639000EAA9FF /* 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3.png; sourceTree = "<group>"; };
+		1C539B122073639100EAA9FF /* 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 1.png; sourceTree = "<group>"; };
+		1C539B132073639100EAA9FF /* 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 2.png; sourceTree = "<group>"; };
+		1C539B172073749C00EAA9FF /* MusicPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicPlayViewController.swift; sourceTree = "<group>"; };
 		1C7A32BC2071F858009EB78F /* XMLReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLReader.h; sourceTree = "<group>"; };
 		1C7A32BD2071F858009EB78F /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		1C7A32BE2071F858009EB78F /* XMLReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLReader.m; sourceTree = "<group>"; };
@@ -175,12 +185,17 @@
 		1C539AFE20731AE000EAA9FF /* day3 */ = {
 			isa = PBXGroup;
 			children = (
+				1C539B122073639100EAA9FF /* 1.png */,
+				1C539B132073639100EAA9FF /* 2.png */,
+				1C539B112073639000EAA9FF /* 3.png */,
 				1C539AFF20731E6400EAA9FF /* TileView.swift */,
 				1C539B01207322D900EAA9FF /* JuZhenViewController.swift */,
 				1C539B0320732AEA00EAA9FF /* ScoreView.swift */,
 				1C539B052073444300EAA9FF /* ScoreViewController.swift */,
 				1C539B07207346F400EAA9FF /* ViewFactory.swift */,
 				1C539B092073481F00EAA9FF /* ViewFactoryController.swift */,
+				1C539B0F2073613900EAA9FF /* GuideViewController.swift */,
+				1C539B172073749C00EAA9FF /* MusicPlayViewController.swift */,
 			);
 			path = day3;
 			sourceTree = "<group>";
@@ -307,7 +322,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = xubojoy;
 				TargetAttributes = {
 					1C4D17712059236500001419 = {
@@ -345,6 +360,7 @@
 				1CB3AEC82071CBC10096C403 /* swift.png in Resources */,
 				1C7A32DF20722EF0009EB78F /* iconfont.js in Resources */,
 				1C7A32E320722EF0009EB78F /* demo_fontclass.html in Resources */,
+				1C539B152073639100EAA9FF /* 1.png in Resources */,
 				1C7A32E220722EF0009EB78F /* iconfont.eot in Resources */,
 				1C7A32E020722EF0009EB78F /* demo.css in Resources */,
 				1CB3AECA2071CBC10096C403 /* php.png in Resources */,
@@ -354,12 +370,14 @@
 				1C7A32E520722EF0009EB78F /* demo_unicode.html in Resources */,
 				1C7A32BF2071F859009EB78F /* README.md in Resources */,
 				1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */,
+				1C539B162073639100EAA9FF /* 2.png in Resources */,
 				1C7A32C82071FC26009EB78F /* users.xml in Resources */,
 				1CB3AEC42071CBC10096C403 /* ruby.png in Resources */,
 				1CB3AEC62071CBC10096C403 /* js.png in Resources */,
 				1C7A32E620722EF0009EB78F /* iconfont.svg in Resources */,
 				1C4D177D2059236600001419 /* Assets.xcassets in Resources */,
 				1C4D177B2059236600001419 /* Main.storyboard in Resources */,
+				1C539B142073639100EAA9FF /* 3.png in Resources */,
 				1CB3AEC32071CBC10096C403 /* xcode.png in Resources */,
 				1C7A32E820722EF0009EB78F /* demo_symbol.html in Resources */,
 				1CB3AEC52071CBC10096C403 /* java.png in Resources */,
@@ -447,12 +465,14 @@
 				1C539B0020731E6400EAA9FF /* TileView.swift in Sources */,
 				1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */,
 				1C539B0420732AEA00EAA9FF /* ScoreView.swift in Sources */,
+				1C539B102073613900EAA9FF /* GuideViewController.swift in Sources */,
 				1C993781206E1B0A0007A2D8 /* String.swift in Sources */,
 				1C539B08207346F400EAA9FF /* ViewFactory.swift in Sources */,
 				1C4D17762059236500001419 /* AppDelegate.swift in Sources */,
 				1C7A32CC2071FFBA009EB78F /* GDataXMLNode.m in Sources */,
 				1C993783206E1CEF0007A2D8 /* Person.swift in Sources */,
 				1C993789206E35320007A2D8 /* CountDownController.swift in Sources */,
+				1C539B182073749C00EAA9FF /* MusicPlayViewController.swift in Sources */,
 				1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */,
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
 				1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */,
@@ -497,6 +517,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -504,6 +525,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -554,6 +576,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -561,6 +584,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -597,6 +621,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";
@@ -619,6 +644,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2QC668LVNU;
 				HEADER_SEARCH_PATHS = "${SDK_DIR}/usr/include/libxml2";

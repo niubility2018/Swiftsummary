@@ -8,6 +8,39 @@
 
 import UIKit
 
+struct Poker {
+    enum Suit:String {
+        case Heart="红桃",Club="草花", Diamond="方片", Spade="黑桃"
+    }
+    
+    enum Number:Int {
+        case Two=2, Three, Four, Five,Six,Seven,Eight,Nine,Ten
+        case Jack,Queen,King,Ace
+    }
+    
+    let suit:Suit
+    let number:Number
+    
+    func description() {
+        print("这张牌的花色是\(suit.rawValue)，牌的面值是\(number.rawValue)")
+    }
+}
+
+extension String {
+    //返回第一次出现的指定子字符串在此字符串中的索引
+    //（如果backwards参数设置为true，则返回最后出现的位置）
+    func positionOf(sub:String, backwards:Bool = false)->Int {
+        var pos = -1
+        if let range = range(of:sub, options: backwards ? .backwards : .literal ) {
+            if !range.isEmpty {
+                pos = self.distance(from:startIndex, to:range.lowerBound)
+            }
+        }
+        return pos
+    }
+}
+
+
 class ViewFactoryController: UIViewController,UITextFieldDelegate {
 
     var txtNum:UITextField!
@@ -23,6 +56,44 @@ class ViewFactoryController: UIViewController,UITextFieldDelegate {
         let value1 = 1<<Int(arc4random_uniform(5))//2的0~4随机次方（包括0,4）
         print(value)
         print(value1)
+        
+        let card = Poker(suit: .Heart, number: .Jack)
+        card.description()
+        
+        
+       let bgImageView = UIImageView(frame: CGRect(x: 100, y: 400, width: 100, height: 100))
+        bgImageView.backgroundColor = .orange
+        self.view.addSubview(bgImageView)
+//        使用系统URLSession 网络请求
+        let url = URL(string: "http://hangge.com/blog/images/logo.png")
+        let request = URLRequest(url: url!)
+        let dataTask = URLSession.shared.dataTask(with: request) { (data, response, error) in
+            if error != nil{
+                print(error.debugDescription)
+            }else{
+                //将图片数据赋予UIImage
+                let img = UIImage(data:data!)
+                DispatchQueue.main.async {
+                    bgImageView.image = img
+                }
+                
+            }
+        }
+        dataTask.resume()
+        
+        
+        
+        let str1 = "欢迎访问hangge.com。hangge.com做最好的开发者知识平台"
+        let str2 = "hangge"
+        print("父字符串：\(str1)")
+        print("子字符串：\(str2)")
+        
+        let position1 = str1.positionOf(sub: str2)
+        print("子字符串第一次出现的位置是：\(position1)")
+        let position2 = str1.positionOf(sub: str2, backwards: true)
+        print("子字符串最后一次出现的位置是：\(position2)")
+        
+        
         
         
     }
