@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38729BA069C2139B21B72A79C283B15C"
+               BlueprintIdentifier = "99C66F9966DCC1E0C95430AE319833EF"
                BuildableName = "Pods_swiftsummay.framework"
                BlueprintName = "Pods-swiftsummay"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38729BA069C2139B21B72A79C283B15C"
+            BlueprintIdentifier = "99C66F9966DCC1E0C95430AE319833EF"
             BuildableName = "Pods_swiftsummay.framework"
             BlueprintName = "Pods-swiftsummay"
             ReferencedContainer = "container:Pods.xcodeproj">

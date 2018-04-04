@@ -41,11 +41,39 @@ extension String {
 }
 
 
+class JsonElement {
+    var name: String = ""
+    var jValue: String?
+    
+    lazy var asJson:() -> String = {
+        [unowned self] in //使用无主引用来解决强引用循环
+        if let text = self.jValue {
+            return "\(self.name):\(text)"
+        }else{
+            return "text is nil"
+        }
+    }
+    
+    init(name:String, text:String){
+        self.name = name
+        self.jValue = text
+        print("初始化闭包")
+    }
+    
+    deinit{
+        print("闭包释放")
+    }
+    
+}
+
+
 class ViewFactoryController: UIViewController,UITextFieldDelegate {
 
     var txtNum:UITextField!
     var segDimension:UISegmentedControl!
     var btn:UIButton!
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -95,8 +123,58 @@ class ViewFactoryController: UIViewController,UITextFieldDelegate {
         
         
         
+        let str3 = String(str1.reversed())
+        print(str3)
+        
+        //使用类方法
+//        Thread.detachNewThreadSelector(#selector(downLoadImage), toTarget: self, with: nil)
+        
+        
+        //实例方法
+//        let thread = Thread(target: self, selector: #selector(downLoadImage), object: nil)
+//        thread.start()
+        
+//Operation
+//        let operation = BlockOperation { [weak self] in
+//            self?.downLoadImage()
+//            return
+//        }
+//
+//        let queue = OperationQueue()
+//        queue.addOperation(operation)
+        
+        
+        DispatchQueue.global(qos: .default).async {
+            print("do work")
+//            self.downLoadImage()
+            DispatchQueue.main.async {
+                print("main refresh")
+            }
+        }
+        
+        
+        //获取系统存在的全局队列
+        let queue = DispatchQueue.global(qos: .default)
+        
+        queue.async {
+            DispatchQueue.concurrentPerform(iterations: 6, execute: { (index) in
+                print(index)
+            })
+            
+            DispatchQueue.main.async {
+                print("done")
+            }
+            
+        }
         
     }
+    
+    @objc func downLoadImage() {
+        let imageUrl = "http://hangge.com/blog/images/logo.png"
+        let data = try! Data(contentsOf: URL(string: imageUrl)!)
+        print("------------",data.count)
+    }
+    
     
     func setupControls()
     {
