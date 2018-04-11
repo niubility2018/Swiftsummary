@@ -138,7 +138,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //            print("请求失败！错误信息：\(error.errorDescription ?? "")")
 //        }
         
-        let bavc = PhotoLibViewController()
+        let bavc = ImageViewController()
         self.navigationController?.pushViewController(bavc, animated: true)
         
     }

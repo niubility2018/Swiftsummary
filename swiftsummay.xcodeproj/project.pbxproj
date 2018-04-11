@@ -15,6 +15,8 @@
 		1C4D177B2059236600001419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D17792059236600001419 /* Main.storyboard */; };
 		1C4D177D2059236600001419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177C2059236600001419 /* Assets.xcassets */; };
 		1C4D17802059236600001419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C4D177E2059236600001419 /* LaunchScreen.storyboard */; };
+		1C4D406B207CBA5700D2B5F6 /* StringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D406A207CBA5700D2B5F6 /* StringViewController.swift */; };
+		1C4D406D207CBC5A00D2B5F6 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4D406C207CBC5A00D2B5F6 /* ImageViewController.swift */; };
 		1C539B0020731E6400EAA9FF /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539AFF20731E6400EAA9FF /* TileView.swift */; };
 		1C539B02207322D900EAA9FF /* JuZhenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B01207322D900EAA9FF /* JuZhenViewController.swift */; };
 		1C539B0420732AEA00EAA9FF /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C539B0320732AEA00EAA9FF /* ScoreView.swift */; };
@@ -80,6 +82,8 @@
 		1C4D177C2059236600001419 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C4D177F2059236600001419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C4D17812059236600001419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C4D406A207CBA5700D2B5F6 /* StringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringViewController.swift; sourceTree = "<group>"; };
+		1C4D406C207CBC5A00D2B5F6 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		1C539AFF20731E6400EAA9FF /* TileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
 		1C539B01207322D900EAA9FF /* JuZhenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JuZhenViewController.swift; sourceTree = "<group>"; };
 		1C539B0320732AEA00EAA9FF /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
@@ -174,6 +178,7 @@
 		1C4D17742059236500001419 /* swiftsummay */ = {
 			isa = PBXGroup;
 			children = (
+				1C4D4069207CB9BB00D2B5F6 /* day5 */,
 				1C8C322120747499002A5230 /* day4 */,
 				1C539AFE20731AE000EAA9FF /* day3 */,
 				1C7A32D420722EF0009EB78F /* my_test_font */,
@@ -191,6 +196,15 @@
 				1C4D17812059236600001419 /* Info.plist */,
 			);
 			path = swiftsummay;
+			sourceTree = "<group>";
+		};
+		1C4D4069207CB9BB00D2B5F6 /* day5 */ = {
+			isa = PBXGroup;
+			children = (
+				1C4D406A207CBA5700D2B5F6 /* StringViewController.swift */,
+				1C4D406C207CBC5A00D2B5F6 /* ImageViewController.swift */,
+			);
+			path = day5;
 			sourceTree = "<group>";
 		};
 		1C539AFE20731AE000EAA9FF /* day3 */ = {
@@ -488,6 +502,7 @@
 				1C484116205A3A10004F53BF /* DouBanAPI.swift in Sources */,
 				1C993787206E2F1A0007A2D8 /* CoreMotionController.swift in Sources */,
 				1C7A32C02071F859009EB78F /* XMLReader.m in Sources */,
+				1C4D406B207CBA5700D2B5F6 /* StringViewController.swift in Sources */,
 				1C8C3225207474C5002A5230 /* SocketServerController.swift in Sources */,
 				1C539B0020731E6400EAA9FF /* TileView.swift in Sources */,
 				1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */,
@@ -507,6 +522,7 @@
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
 				1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */,
 				1C99377F206DD18B0007A2D8 /* BasicTheoryController.swift in Sources */,
+				1C4D406D207CBC5A00D2B5F6 /* ImageViewController.swift in Sources */,
 				1C7A32C52071FA9E009EB78F /* Constant.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
