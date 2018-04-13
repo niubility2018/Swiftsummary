@@ -33,6 +33,10 @@
 		1C466433208079E5007BC138 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C466431208079E5007BC138 /* MyCollectionViewCell.swift */; };
 		1C466434208079E5007BC138 /* MyCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C466432208079E5007BC138 /* MyCollectionViewCell.xib */; };
 		1C4664382080857E007BC138 /* LinearCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C4664372080857E007BC138 /* LinearCollectionViewLayout.swift */; };
+		1C46643A20808811007BC138 /* DeviceInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46643920808811007BC138 /* DeviceInfoViewController.swift */; };
+		1C46643D20808CC1007BC138 /* AVPlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C46643B20808CC1007BC138 /* AVPlayerViewController.swift */; };
+		1C46643E20808CC1007BC138 /* AVPlayerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C46643C20808CC1007BC138 /* AVPlayerViewController.xib */; };
+		1C46644220809663007BC138 /* yuema.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1C46644120809663007BC138 /* yuema.mp3 */; };
 		1C484116205A3A10004F53BF /* DouBanAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484115205A3A10004F53BF /* DouBanAPI.swift */; };
 		1C484118205A5200004F53BF /* HttpbinAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484117205A5200004F53BF /* HttpbinAPI.swift */; };
 		1C48411A205A572C004F53BF /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C484119205A572C004F53BF /* Network.swift */; };
@@ -148,6 +152,10 @@
 		1C466431208079E5007BC138 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
 		1C466432208079E5007BC138 /* MyCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCollectionViewCell.xib; sourceTree = "<group>"; };
 		1C4664372080857E007BC138 /* LinearCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinearCollectionViewLayout.swift; sourceTree = "<group>"; };
+		1C46643920808811007BC138 /* DeviceInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceInfoViewController.swift; sourceTree = "<group>"; };
+		1C46643B20808CC1007BC138 /* AVPlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AVPlayerViewController.swift; sourceTree = "<group>"; };
+		1C46643C20808CC1007BC138 /* AVPlayerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AVPlayerViewController.xib; sourceTree = "<group>"; };
+		1C46644120809663007BC138 /* yuema.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = yuema.mp3; sourceTree = "<group>"; };
 		1C484115205A3A10004F53BF /* DouBanAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DouBanAPI.swift; sourceTree = "<group>"; };
 		1C484117205A5200004F53BF /* HttpbinAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpbinAPI.swift; sourceTree = "<group>"; };
 		1C484119205A572C004F53BF /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
@@ -348,6 +356,10 @@
 				1C4664372080857E007BC138 /* LinearCollectionViewLayout.swift */,
 				1C466431208079E5007BC138 /* MyCollectionViewCell.swift */,
 				1C466432208079E5007BC138 /* MyCollectionViewCell.xib */,
+				1C46643920808811007BC138 /* DeviceInfoViewController.swift */,
+				1C46643B20808CC1007BC138 /* AVPlayerViewController.swift */,
+				1C46644120809663007BC138 /* yuema.mp3 */,
+				1C46643C20808CC1007BC138 /* AVPlayerViewController.xib */,
 			);
 			path = day8;
 			sourceTree = "<group>";
@@ -730,6 +742,7 @@
 				1C52DA9A207F5A2800BD86FB /* ShareSDKConfigFile.bundle in Resources */,
 				1C52DA8F207F5A2800BD86FB /* WeiboSDK.bundle in Resources */,
 				1C52DA91207F5A2800BD86FB /* README.txt in Resources */,
+				1C46643E20808CC1007BC138 /* AVPlayerViewController.xib in Resources */,
 				1C7A32E120722EF0009EB78F /* iconfont.woff in Resources */,
 				1C7A32E520722EF0009EB78F /* demo_unicode.html in Resources */,
 				1C7A32BF2071F859009EB78F /* README.md in Resources */,
@@ -744,6 +757,7 @@
 				1C4D177B2059236600001419 /* Main.storyboard in Resources */,
 				1C539B142073639100EAA9FF /* 3.png in Resources */,
 				1CB3AEC32071CBC10096C403 /* xcode.png in Resources */,
+				1C46644220809663007BC138 /* yuema.mp3 in Resources */,
 				1C7A32E820722EF0009EB78F /* demo_symbol.html in Resources */,
 				1CB3AEC52071CBC10096C403 /* java.png in Resources */,
 				1CB3AECB2071CBC10096C403 /* c#.png in Resources */,
@@ -834,6 +848,7 @@
 				1C450C9B207DEF35000EBBB2 /* Select.swift in Sources */,
 				1C450CA5207DEF35000EBBB2 /* UDPClient.swift in Sources */,
 				1C450C98207DEF35000EBBB2 /* Conversions.swift in Sources */,
+				1C46643A20808811007BC138 /* DeviceInfoViewController.swift in Sources */,
 				1C450C5F207DD867000EBBB2 /* HeadPortrait.swift in Sources */,
 				1C450C96207DEF35000EBBB2 /* TCPSocket.swift in Sources */,
 				1C539B062073444300EAA9FF /* ScoreViewController.swift in Sources */,
@@ -877,6 +892,7 @@
 				1C993789206E35320007A2D8 /* CountDownController.swift in Sources */,
 				1C539B182073749C00EAA9FF /* MusicPlayViewController.swift in Sources */,
 				1C8C322B20749859002A5230 /* ImageDetailViewController.swift in Sources */,
+				1C46643D20808CC1007BC138 /* AVPlayerViewController.swift in Sources */,
 				1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */,
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
 				1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */,
