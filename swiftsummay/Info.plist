@@ -16,10 +16,54 @@
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>sina</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb59527198</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLName</key>
+			<string>com.weibo</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>wb59527198</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>MOBAppKey</key>
+	<string>252e5bd3c07c4</string>
+	<key>MOBAppSecret</key>
+	<string>74dba398d1f5cf6d5508c427551c402a</string>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>NSCameraUsageDescription</key>
+	<string>是否允许此App使用你的相机？</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>我们需要通过您的地理位置信息获取您周边的相关数据</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>是否允许此App访问你的麦克风？</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>是否允许此App访问你的媒体资料库？</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>iconfont.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>

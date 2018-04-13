@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "38729BA069C2139B21B72A79C283B15C"
+               BlueprintIdentifier = "460EBC525132E5BB2E95FE18123180E6"
                BuildableName = "Pods_swiftsummay.framework"
                BlueprintName = "Pods-swiftsummay"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -26,7 +26,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
@@ -37,7 +36,6 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      language = ""
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -47,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "38729BA069C2139B21B72A79C283B15C"
+            BlueprintIdentifier = "460EBC525132E5BB2E95FE18123180E6"
             BuildableName = "Pods_swiftsummay.framework"
             BlueprintName = "Pods-swiftsummay"
             ReferencedContainer = "container:Pods.xcodeproj">

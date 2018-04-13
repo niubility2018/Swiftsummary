@@ -56,6 +56,17 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             //没有网络等问题
             print("请求失败！错误信息：\(error.errorDescription ?? "")")
         }
+        
+        
+        let remind = 2 % 6
+        
+        print("余数---------------\(remind)")
+        
+        
+        
+        
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -73,10 +84,24 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
         return 44
     }
     
+    //设置cell的显示动画
+    
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        //设置cell的显示动画为3D缩放
+        //xy方向缩放的初始值为0.1
+        cell.layer.transform = CATransform3DMakeScale(0.1, 0.1, 1)
+        //设置动画时间为0.25秒，xy方向缩放的最终值为1
+        UIView.animate(withDuration: 0.25, animations: {
+            cell.layer.transform=CATransform3DMakeScale(1, 1, 1)
+        })
+    }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let channelName = channels[indexPath.row]["name"].stringValue
-        let channelId = channels[indexPath.row]["channel_id"].stringValue
-        
+//        let channelName = channels[indexPath.row]["name"].stringValue
+//        let channelId = channels[indexPath.row]["channel_id"].stringValue
+        /*
+         方法1
+         */
 //        DouBanProvider.request(DouBan.playlist(channelId)) { (result) in
 //            if case let.success(response) = result {
 //                let data = try? response.mapJSON()
@@ -89,28 +114,65 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //                self.showAlert(title: channelName, message: message)
 //            }
 //        }
+        /*
+         方法2
+         */
+//        Network.request(Httpbin.playlist(channelId), success: { (json) in
+//            if json != JSON.null{
+//                print(json)
+//                if json["song"].arrayValue.count > 0 {
+//                    let music = json["song"].arrayValue[0]
+//                    let artist = music["artist"].stringValue
+//                    let title = music["title"].stringValue
+//                    let message = "歌手：\(artist)\n歌曲：\(title)"
+//                    DispatchQueue.main.async {
+//                        self.showAlert(title: channelName, message: message)
+//                    }
+//                }
+//            }
+//        }, error: { (statusCode) in
+//            //服务器报错等问题
+//            print("请求错误！错误码：\(statusCode)")
+//        }) { (error) in
+//            //没有网络等问题
+//            print("请求失败！错误信息：\(error.errorDescription ?? "")")
+//        }
         
-        Network.request(Httpbin.playlist(channelId), success: { (json) in
-            if json != JSON.null{
-                print(json)
-                if json["song"].arrayValue.count > 0 {
-                    let music = json["song"].arrayValue[0]
-                    let artist = music["artist"].stringValue
-                    let title = music["title"].stringValue
-                    let message = "歌手：\(artist)\n歌曲：\(title)"
-                    DispatchQueue.main.async {
-                        self.showAlert(title: channelName, message: message)
-                    }
-                }
+        let bavc = LoopCollectionController()
+        self.navigationController?.pushViewController(bavc, animated: true)
+//        share()
+    }
+    
+    
+    func share() {
+        // 1.创建分享参数
+        let shareParames = NSMutableDictionary()
+        shareParames.ssdkSetupShareParams(byText: "分享内容",
+                                          images : UIImage(named: "swift.png"),
+                                          url : NSURL(string:"http://mob.com") as URL?,
+                                          title : "分享标题",
+                                          type : SSDKContentType.image)
+        
+        //2.进行分享
+        ShareSDK.share(SSDKPlatformType.typeSinaWeibo, parameters: shareParames) { (state : SSDKResponseState, nil, entity : SSDKContentEntity?, error :Error?) in
+            
+            switch state{
+                
+            case SSDKResponseState.success:
+                print("分享成功")
+            case SSDKResponseState.fail:
+                print("授权失败,错误描述:\(String(describing: error))")
+            case SSDKResponseState.cancel:
+                print("操作取消")
+                
+            default:
+                break
             }
-        }, error: { (statusCode) in
-            //服务器报错等问题
-            print("请求错误！错误码：\(statusCode)")
-        }) { (error) in
-            //没有网络等问题
-            print("请求失败！错误信息：\(error.errorDescription ?? "")")
+            
         }
     }
+    
+    
     
     //显示消息
     func showAlert(title:String, message:String){
