@@ -138,10 +138,41 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //            print("请求失败！错误信息：\(error.errorDescription ?? "")")
 //        }
         
-        let bavc = ImageViewController()
+        let bavc = LoopCollectionController()
         self.navigationController?.pushViewController(bavc, animated: true)
-        
+//        share()
     }
+    
+    
+    func share() {
+        // 1.创建分享参数
+        let shareParames = NSMutableDictionary()
+        shareParames.ssdkSetupShareParams(byText: "分享内容",
+                                          images : UIImage(named: "swift.png"),
+                                          url : NSURL(string:"http://mob.com") as URL?,
+                                          title : "分享标题",
+                                          type : SSDKContentType.image)
+        
+        //2.进行分享
+        ShareSDK.share(SSDKPlatformType.typeSinaWeibo, parameters: shareParames) { (state : SSDKResponseState, nil, entity : SSDKContentEntity?, error :Error?) in
+            
+            switch state{
+                
+            case SSDKResponseState.success:
+                print("分享成功")
+            case SSDKResponseState.fail:
+                print("授权失败,错误描述:\(String(describing: error))")
+            case SSDKResponseState.cancel:
+                print("操作取消")
+                
+            default:
+                break
+            }
+            
+        }
+    }
+    
+    
     
     //显示消息
     func showAlert(title:String, message:String){

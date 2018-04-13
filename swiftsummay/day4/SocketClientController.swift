@@ -46,67 +46,67 @@ class SocketClientController: UIViewController {
         socketServer?.start()
         
         //初始化客户端，并连接服务器
-        processClientSocket()
+//        processClientSocket()
     }
     
     //初始化客户端，并连接服务器
-    func processClientSocket(){
-        socketClient=TCPClient(address: "localhost", port: 8080)
-        
-        DispatchQueue.global(qos: .background).async {
-            //用于读取并解析服务端发来的消息
-            func readmsg()->[String:Any]?{
-                //read 4 byte int as type
-                if let data=self.socketClient!.read(4){
-                    if data.count==4{
-                        let ndata=NSData(bytes: data, length: data.count)
-                        var len:Int32=0
-                        ndata.getBytes(&len, length: data.count)
-                        if let buff=self.socketClient!.read(Int(len)){
-                            let msgd = Data(bytes: buff, count: buff.count)
-                            if let msgi = try? JSONSerialization.jsonObject(with: msgd,
-                                                                            options: .mutableContainers) {
-                                return msgi as? [String:Any]
-                            }
-                        }
-                    }
-                }
-                return nil
-            }
-            
-            //连接服务器
-            switch self.socketClient!.connect(timeout: 5) {
-            case .success:
-                DispatchQueue.main.async {
-                    self.alert(msg: "connect success", after: {
-                    })
-                }
-                
-                //发送用户名给服务器（这里使用随机生成的）
-                let msgtosend=["cmd":"nickname","nickname":"游客\(Int(arc4random()%1000))"]
-                self.sendMessage(msgtosend: msgtosend)
-                
-                //不断接收服务器发来的消息
-                while true{
-                    if let msg=readmsg(){
-                        DispatchQueue.main.async {
-                            self.processMessage(msg: msg)
-                        }
-                    }else{
-                        DispatchQueue.main.async {
-                            //self.disconnect()
-                        }
-                        //break
-                    }
-                }
-            case .failure(let error):
-                DispatchQueue.main.async {
-                    self.alert(msg: error.localizedDescription,after: {
-                    })
-                }
-            }
-        }
-    }
+//    func processClientSocket(){
+//        socketClient=TCPClient(address: "localhost", port: 8080)
+//
+//        DispatchQueue.global(qos: .background).async {
+//            //用于读取并解析服务端发来的消息
+//            func readmsg()->[String:Any]?{
+//                //read 4 byte int as type
+//                if let data=self.socketClient!.read(4){
+//                    if data.count==4{
+//                        let ndata=NSData(bytes: data, length: data.count)
+//                        var len:Int32=0
+//                        ndata.getBytes(&len, length: data.count)
+//                        if let buff=self.socketClient!.read(Int(len)){
+//                            let msgd = Data(bytes: buff, count: buff.count)
+//                            if let msgi = try? JSONSerialization.jsonObject(with: msgd,
+//                                                                            options: .mutableContainers) {
+//                                return msgi as? [String:Any]
+//                            }
+//                        }
+//                    }
+//                }
+//                return nil
+//            }
+//
+//            //连接服务器
+//            switch self.socketClient!.connect(timeout: 5) {
+//            case .success:
+//                DispatchQueue.main.async {
+//                    self.alert(msg: "connect success", after: {
+//                    })
+//                }
+//
+//                //发送用户名给服务器（这里使用随机生成的）
+//                let msgtosend=["cmd":"nickname","nickname":"游客\(Int(arc4random()%1000))"]
+//                self.sendMessage(msgtosend: msgtosend)
+//
+//                //不断接收服务器发来的消息
+//                while true{
+//                    if let msg=readmsg(){
+//                        DispatchQueue.main.async {
+//                            self.processMessage(msg: msg)
+//                        }
+//                    }else{
+//                        DispatchQueue.main.async {
+//                            //self.disconnect()
+//                        }
+//                        //break
+//                    }
+//                }
+//            case .failure(let error):
+//                DispatchQueue.main.async {
+//                    self.alert(msg: error.localizedDescription,after: {
+//                    })
+//                }
+//            }
+//        }
+//    }
     
     //“发送消息”按钮点击
     @objc func sendMsg(_ sender: AnyObject) {
@@ -122,8 +122,8 @@ class SocketClientController: UIViewController {
                                                 options: .prettyPrinted)
         var len:Int32=Int32(msgdata!.count)
         let data = Data(bytes: &len, count: 4)
-        _ = self.socketClient!.send(data: data)
-        _ = self.socketClient!.send(data:msgdata!)
+//        _ = self.socketClient!.send(data: data)
+//        _ = self.socketClient!.send(data:msgdata!)
     }
     
     //处理服务器返回的消息
