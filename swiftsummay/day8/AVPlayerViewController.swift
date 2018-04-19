@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import MediaPlayer
 class AVPlayerViewController: UIViewController {
 
     @IBOutlet var playButton: UIButton!
@@ -46,7 +47,7 @@ class AVPlayerViewController: UIViewController {
         
         //播放过程中动态改变进度条值和时间标签
         player?.addPeriodicTimeObserver(forInterval: CMTimeMakeWithSeconds(1, 1), queue: DispatchQueue.main, using: { (CMTime) in
-            if self.player?.currentItem?.status == .readyToPlay {
+            if self.player?.currentItem?.status == .readyToPlay && self.player?.rate != 0{
                 //更新进度条进度值
                 let currentTime = CMTimeGetSeconds(self.player!.currentTime())
                 self.playbackSlider!.value = Float(currentTime)
@@ -67,9 +68,73 @@ class AVPlayerViewController: UIViewController {
                 }
                 //更新播放时间
                 self.playTime!.text=time
+                //设置后台播放显示信息
+                self.setInfoCenterCredentials(playbackState: 1)
             }
         })
     }
+    
+    
+    // 设置后台播放显示信息
+    func setInfoCenterCredentials(playbackState: Int) {
+        let mpic = MPNowPlayingInfoCenter.default()
+        
+        //专辑封面
+        let mySize = CGSize(width: 400, height: 400)
+        var albumArt: MPMediaItemArtwork
+        if #available(iOS 10.0, *) {
+            albumArt = MPMediaItemArtwork(boundsSize:mySize) { sz in
+                return UIImage(named: "swift")!
+            }
+        } else {
+            // Fallback on earlier versions
+            albumArt = MPMediaItemArtwork(image: UIImage(named: "swift")!)
+        }
+        
+        //获取进度
+        let postion = Double(self.playbackSlider!.value)
+        let duration = Double(self.playbackSlider!.maximumValue)
+        
+        mpic.nowPlayingInfo = [MPMediaItemPropertyTitle: "看我跃马扬鞭",
+                               MPMediaItemPropertyArtist: "西游记",
+                               MPMediaItemPropertyArtwork: albumArt,
+                               MPNowPlayingInfoPropertyElapsedPlaybackTime: postion,
+                               MPMediaItemPropertyPlaybackDuration: duration,
+                               MPNowPlayingInfoPropertyPlaybackRate: playbackState]
+    }
+    
+    //后台操作
+    override func remoteControlReceived(with event: UIEvent?) {
+        guard let event = event else {
+            print("no event\n")
+            return
+        }
+        
+        if event.type == UIEventType.remoteControl {
+            switch event.subtype {
+            case .remoteControlTogglePlayPause:
+                print("暂停/播放")
+            case .remoteControlPreviousTrack:
+                print("上一首")
+            case .remoteControlNextTrack:
+                print("下一首")
+            case .remoteControlPlay:
+                print("播放")
+                player!.play()
+                //设置后台播放显示信息
+//                self.setInfoCenterCredentials(playbackState: 1)
+            case .remoteControlPause:
+                print("暂停")
+                player!.pause()
+                //后台播放显示信息进度停止
+                setInfoCenterCredentials(playbackState: 0)
+            default:
+                break
+            }
+        }
+    }
+    
+    
     
     
     @IBAction func playButtonTapped(_ sender: Any) {
@@ -82,6 +147,8 @@ class AVPlayerViewController: UIViewController {
         } else {
             player?.pause()
             playButton.setTitle("播放", for: .normal)
+            //后台播放显示信息进度停止
+            setInfoCenterCredentials(playbackState: 0)
         }
         
     }
@@ -104,11 +171,18 @@ class AVPlayerViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         NotificationCenter.default.addObserver(self, selector: #selector(finishedPlaying),
                                                name: NSNotification.Name.AVPlayerItemDidPlayToEndTime, object: playerItem)
+        
+        //告诉系统接受远程响应事件，并注册成为第一响应者
+        UIApplication.shared.beginReceivingRemoteControlEvents()
+        self.becomeFirstResponder()
     }
     
     //页面消失时取消歌曲播放结束通知监听
     override func viewWillDisappear(_ animated: Bool) {
         NotificationCenter.default.removeObserver(self)
+        //停止接受远程响应事件
+        UIApplication.shared.endReceivingRemoteControlEvents()
+        self.resignFirstResponder()
     }
     
     //歌曲播放完毕
@@ -119,6 +193,11 @@ class AVPlayerViewController: UIViewController {
         playButton.setTitle("播放", for: .normal)
     }
     
+    
+    //是否能成为第一响应对象
+    override var canBecomeFirstResponder: Bool {
+        return true
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
