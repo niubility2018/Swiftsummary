@@ -30,7 +30,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window!.rootViewController=guideViewController;
             print("guideview launched!")
         }else{
-            let viewController = ViewController()
+            let viewController = ShiWenViewController()
             let nav = UINavigationController(rootViewController: viewController)
             self.window?.rootViewController = nav
         }
