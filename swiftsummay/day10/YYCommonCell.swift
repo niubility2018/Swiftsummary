@@ -78,6 +78,22 @@ class YYCommonCell: UITableViewCell {
         }
     }
     
+    func renderYYCommonCellWithAuthor(author:Author) {
+        do{
+            let attrStr = try NSMutableAttributedString(data: (author.cont!.data(using: String.Encoding.unicode, allowLossyConversion: true)!),options: [.documentType: NSAttributedString.DocumentType.html] ,documentAttributes: nil)
+            attrStr.yy_lineSpacing = 10
+            attrStr.yy_font = UIFont.systemFont(ofSize: 15)
+            attrStr.yy_alignment = .left
+            self.contentLabel.attributedText = attrStr
+            self.contentLabel.numberOfLines = 0
+            self.contentLabel.snp.updateConstraints { (make) in
+                make.size.height.equalTo(author.cellHeight!)
+            }
+        }catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    }
+    
 
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")

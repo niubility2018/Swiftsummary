@@ -16,12 +16,12 @@ class ShiWenCollectionCell: UICollectionViewCell {
         self.backgroundColor = .white
         self.contentView.addSubview(imageV)
         imageV.snp.makeConstraints { (make) in
-            make.top.equalTo(0)
+            make.top.equalTo(10)
             make.centerX.equalTo(self.contentView.center.x)
-            make.size.equalTo(CGSize(width: 80, height: 80))
+            make.size.equalTo(CGSize(width: 60, height: 60))
         }
         let image = UIImage(named: "33");
-        imageV.layer.cornerRadius = 40
+        imageV.layer.cornerRadius = 30
         imageV.layer.masksToBounds = true
         imageV.image = image
         

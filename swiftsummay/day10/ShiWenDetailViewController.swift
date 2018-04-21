@@ -47,6 +47,18 @@ class ShiWenDetailViewController: UIViewController,CategoryTableAndCollectionTab
                     let introHeight = layout?.textBoundingSize.height
                     print(CGFloat(introHeight!))
                     self.shiWenDetailModel?.tb_gushiwen?.cellHeight = introHeight
+                    
+                    let authorAttrStr = try NSMutableAttributedString(data: (self.shiWenDetailModel?.tb_author?.cont?.data(using: String.Encoding.unicode, allowLossyConversion: true)!)!,options: [.documentType: NSAttributedString.DocumentType.html] ,documentAttributes: nil)
+                    authorAttrStr.yy_lineSpacing = 10
+                    authorAttrStr.yy_font = UIFont.systemFont(ofSize: 15)
+                    authorAttrStr.yy_alignment = .center
+                    let maxAuthorSize = CGSize(width: UIScreen.main.bounds.size.width-40, height: CGFloat(MAXFLOAT))
+                    //计算文本尺寸
+                    let authorLayout = YYTextLayout.init(containerSize: maxAuthorSize, text: authorAttrStr)
+                    let authorIntroHeight = authorLayout?.textBoundingSize.height
+                    print(CGFloat(authorIntroHeight!))
+                    self.shiWenDetailModel?.tb_author?.cellHeight = authorIntroHeight
+                
             
                     for item in (self.shiWenDetailModel?.tb_fanyis?.fanyis)! {
                         let attrStr = try NSMutableAttributedString(data: (item.cont.data(using: String.Encoding.unicode, allowLossyConversion: true)!),options: [.documentType: NSAttributedString.DocumentType.html] ,documentAttributes: nil)
@@ -73,9 +85,6 @@ class ShiWenDetailViewController: UIViewController,CategoryTableAndCollectionTab
                         print(CGFloat(introHeight!))
                         item.cellHeight = introHeight
                     }
-                    
-                    
-                    
                 }catch let error as NSError {
                     print(error.localizedDescription)
                 }
@@ -207,7 +216,7 @@ extension ShiWenDetailViewController: UITableViewDataSource{
             }
             else {
                 if self.shiWenDetailModel != nil {
-                    
+                    cell?.renderYYCommonCellWithAuthor(author: (self.shiWenDetailModel?.tb_author)!)
                 }
             }
             return cell!
@@ -251,7 +260,11 @@ extension ShiWenDetailViewController: UITableViewDelegate{
                     return 0
                 }
             }else{
-                return 100
+                if self.shiWenDetailModel != nil {
+                    return (self.shiWenDetailModel?.tb_author?.cellHeight)! + 20
+                }else{
+                    return 0
+                }
             }
         }
         else {

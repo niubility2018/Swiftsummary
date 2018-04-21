@@ -20,6 +20,8 @@ class Author: HandyJSON {
     var creTime: CLongLong?
     var shiCount: Int?
     
+    var cellHeight: CGFloat?
+    
     required init() {
     }
 }
