@@ -8,6 +8,7 @@
 
 import UIKit
 import SwiftyJSON
+import HandyJSON
 class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSource {
     
     
@@ -56,17 +57,27 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
             //没有网络等问题
             print("请求失败！错误信息：\(error.errorDescription ?? "")")
         }
+//        Network.requestTool(Httpbin.channels, success: { (dict) in
+//            print(dict)
+//
+//            if let channel = Channel.deserialize(from: dict) {
+//                print(channel.channels as Any)
+//                self.channels = channel.channels!
+//            }
+//            DispatchQueue.main.async {
+//                self.tableView.reloadData()
+//            }
+//
+//        }, error: { (statusCode) in
+//
+//        }) { (error) in
+//
+//        }
         
         
         let remind = 2 % 6
         
         print("余数---------------\(remind)")
-        
-        
-        
-        
-        
-        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -76,6 +87,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SwiftCell")
         cell?.textLabel?.text = channels[indexPath.row]["name"].stringValue
+//        cell?.textLabel?.text = self.channels[indexPath.row].name
         return cell!
         
     }
@@ -138,7 +150,7 @@ class ViewController: UIViewController,UITableViewDelegate, UITableViewDataSourc
 //            print("请求失败！错误信息：\(error.errorDescription ?? "")")
 //        }
         
-        let bavc = LoopCollectionController()
+        let bavc = ShiWenViewController()
         self.navigationController?.pushViewController(bavc, animated: true)
 //        share()
     }

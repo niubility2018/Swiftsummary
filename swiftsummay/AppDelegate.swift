@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+import AVFoundation
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -33,6 +33,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let viewController = ViewController()
             let nav = UINavigationController(rootViewController: viewController)
             self.window?.rootViewController = nav
+        }
+        
+        
+        let session = AVAudioSession.sharedInstance()
+        
+        do {
+            try session.setActive(true)
+            try session.setCategory(AVAudioSessionCategoryPlayback)
+        } catch {
+            print(error)
         }
         
         

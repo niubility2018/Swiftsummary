@@ -20,12 +20,14 @@ struct Network {
         failure failureCallBack: @escaping (MoyaError) -> Void
         ){
         provider.request(target) { (result) in
+            print(Moya.URL.self)
             switch result {
             case let .success(response):
                 do{
                     //如果数据返回成功则直接将结果转为JSON
 //                    try response.filterSuccessfulStatusCodes()
                     let json = try JSON(response.mapJSON())
+                    print("-------数据------------:",json)
                     successCallBack(json)
                 }catch let error {
                     //如果数据获取失败，则返回错误状态码
@@ -43,5 +45,40 @@ struct Network {
             }
         }
     }
+    
+    
+    
+    
+    
+    static func requestTool(
+        _ target: Httpbin,
+        success successCallBack: @escaping (NSDictionary) -> Void,
+        error errorCallBack: @escaping (Int) -> Void,
+        failure failureCallBack: @escaping (MoyaError) -> Void
+        ){
+        provider.request(target) { (result) in
+            print(target)
+            switch result {
+            case let .success(response):
+                do{
+                    //如果数据返回成功则直接将结果转为JSON
+                    let dict = try response.mapJSON()
+                    
+                    successCallBack(dict as! NSDictionary)
+                }catch let error {
+                    //如果数据获取失败，则返回错误状态码
+                    errorCallBack((error as! MoyaError).response!.statusCode)
+                }
+            case let .failure(error):
+                failureCallBack(error)
+
+            }
+        }
+    }
+
+    
+    
+    
+    
 }
 
