@@ -32,8 +32,9 @@ class CategoryDetailViewController: UIViewController {
     
     func loadData(page:Int) {
         print("---------当前是页码--------",page)
+        MBProgressHUD.showAdded(to: self.view, animated: true)
         Network.requestTool(Httpbin.shiwenlist(n: "1949558840", tstr: self.title!, page: page, pwd: "", id: 0, token: "gswapi"), success: { (dict) in
-            
+            MBProgressHUD.hide(for: self.view, animated: false)
             print("=================:",dict)
             if let categoryListModel = CategoryListModel.deserialize(from: dict) {
                 self.categoryListModel = categoryListModel
@@ -43,10 +44,12 @@ class CategoryDetailViewController: UIViewController {
                 self.tableView.reloadData()
             }
         }, error: { (statusCode) in
+            MBProgressHUD.hide(for: self.view, animated: false)
             //服务器报错等问题
             print("请求错误！错误码：\(statusCode)")
         }) { (error) in
             //没有网络等问题
+            MBProgressHUD.hide(for: self.view, animated: false)
             print("请求失败！错误信息：\(error.errorDescription ?? "")")
         }
     }

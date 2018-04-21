@@ -112,6 +112,11 @@ extension UIColor {
     static func withRGBA(_ red:CGFloat, _ green:CGFloat, _ blue:CGFloat, _ alpha:CGFloat) -> UIColor {
         return UIColor(red: red / 255, green: green / 255, blue: blue / 255, alpha: alpha)
     }
+    /// 设置随机颜色
+    static func randomColor() -> UIColor {
+        let color: UIColor = UIColor.init(red: (((CGFloat)((arc4random() % 256)) / 255.0)), green: (((CGFloat)((arc4random() % 256)) / 255.0)), blue: (((CGFloat)((arc4random() % 256)) / 255.0)), alpha: 1.0);
+        return color;
+    }
 }
 
 

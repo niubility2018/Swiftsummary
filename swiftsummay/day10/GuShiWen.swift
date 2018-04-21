@@ -23,15 +23,17 @@ class GuShiWen: HandyJSON {
     var exing: Int?
     var type: String?
     var tag: String?
-    var langsongAuthor: String?
-    var langsongAuthorPY: String?
-    var yizhu: String?
-    var yizhuAuthor: String?
-    var yizhuCankao: String?
-    var yizhuYuanchuang: Bool?
-    var yizhuIspass: Bool?
-    var shangIspass: Bool?
-    var beijingIspass: String?
+//    var langsongAuthor: String?
+//    var langsongAuthorPY: String?
+//    var yizhu: String?
+//    var yizhuAuthor: String?
+//    var yizhuCankao: String?
+//    var yizhuYuanchuang: Bool?
+//    var yizhuIspass: Bool?
+//    var shangIspass: Bool?
+//    var beijingIspass: String?
+    var cellHeight: CGFloat?
+    
     
     required init() {
     }

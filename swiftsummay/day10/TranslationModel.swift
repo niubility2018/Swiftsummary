@@ -17,9 +17,12 @@ class TranslationModel: HandyJSON {
     var shiIDnew: String?
     var ok: Int?
     var noOk: Int?
-    var cont: String?
+    var cont: String = ""
     var cankao: String?
     var isYuanchuang: Bool?
+    
+    var cellHeight: CGFloat?
+    
 
     required init() {
     }

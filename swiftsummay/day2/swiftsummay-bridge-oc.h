@@ -15,6 +15,7 @@
 #import "GDataXMLNode.h"
 
 #import <MJRefresh/MJRefresh.h>
+#import <MBProgressHUD/MBProgressHUD.h>
 
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKUI/ShareSDK+SSUI.h>

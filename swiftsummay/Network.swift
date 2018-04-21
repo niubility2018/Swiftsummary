@@ -20,6 +20,7 @@ struct Network {
         failure failureCallBack: @escaping (MoyaError) -> Void
         ){
         provider.request(target) { (result) in
+            print(Moya.URL.self)
             switch result {
             case let .success(response):
                 do{
@@ -56,6 +57,7 @@ struct Network {
         failure failureCallBack: @escaping (MoyaError) -> Void
         ){
         provider.request(target) { (result) in
+            print(target)
             switch result {
             case let .success(response):
                 do{

@@ -31,7 +31,9 @@ class CategoryDetailListCell: UITableViewCell {
     func renderCell(gushiwen: GuShiWen) {
         self.titleLabel.text = gushiwen.nameStr
         self.authorLabel.text = "【\(gushiwen.chaodai!)】" + gushiwen.author!
-        self.contentLabel.text = gushiwen.cont!.utf8.description
+        let contentStr = gushiwen.cont!.pregReplace(pattern: "<[^>]*>", with: "")
+
+        self.contentLabel.text = contentStr
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

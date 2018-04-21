@@ -14,4 +14,5 @@ target 'swiftsummay' do
     pod 'GTMRefresh', '~> 1.3.1'
     pod 'MJRefresh', '~> 3.1.15.3'
     pod 'YYText', '~> 1.0.7'
+    pod 'MBProgressHUD', '~> 1.1.0'
 end

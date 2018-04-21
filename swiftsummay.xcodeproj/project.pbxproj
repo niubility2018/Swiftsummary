@@ -131,6 +131,11 @@
 		1C8C32272074754F002A5230 /* MyTcpSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C32262074754F002A5230 /* MyTcpSocketServer.swift */; };
 		1C8C32292074793A002A5230 /* PhotoLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C32282074793A002A5230 /* PhotoLibViewController.swift */; };
 		1C8C322B20749859002A5230 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C322A20749859002A5230 /* ImageDetailViewController.swift */; };
+		1C970B982089786A008D4456 /* YYCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B972089786A008D4456 /* YYCommonCell.swift */; };
+		1C970B9A2089C7C3008D4456 /* String+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B992089C7C3008D4456 /* String+util.swift */; };
+		1C970B9C2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B9B2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift */; };
+		1C970B9F2089E446008D4456 /* CategoryTableCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B9D2089E446008D4456 /* CategoryTableCollectionCell.swift */; };
+		1C970BA02089E446008D4456 /* CategoryTableCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C970B9E2089E446008D4456 /* CategoryTableCollectionCell.xib */; };
 		1C99377F206DD18B0007A2D8 /* BasicTheoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C99377E206DD18B0007A2D8 /* BasicTheoryController.swift */; };
 		1C993781206E1B0A0007A2D8 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C993780206E1B090007A2D8 /* String.swift */; };
 		1C993783206E1CEF0007A2D8 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C993782206E1CEF0007A2D8 /* Person.swift */; };
@@ -287,6 +292,11 @@
 		1C8C32262074754F002A5230 /* MyTcpSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTcpSocketServer.swift; sourceTree = "<group>"; };
 		1C8C32282074793A002A5230 /* PhotoLibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibViewController.swift; sourceTree = "<group>"; };
 		1C8C322A20749859002A5230 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		1C970B972089786A008D4456 /* YYCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCommonCell.swift; sourceTree = "<group>"; };
+		1C970B992089C7C3008D4456 /* String+util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+util.swift"; sourceTree = "<group>"; };
+		1C970B9B2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableAndCollectionTableCell.swift; sourceTree = "<group>"; };
+		1C970B9D2089E446008D4456 /* CategoryTableCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableCollectionCell.swift; sourceTree = "<group>"; };
+		1C970B9E2089E446008D4456 /* CategoryTableCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryTableCollectionCell.xib; sourceTree = "<group>"; };
 		1C99377E206DD18B0007A2D8 /* BasicTheoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicTheoryController.swift; sourceTree = "<group>"; };
 		1C993780206E1B090007A2D8 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		1C993782206E1CEF0007A2D8 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
@@ -672,8 +682,13 @@
 				1C87606D208718F200164D5E /* Constant.swift */,
 				1C876075208738AD00164D5E /* CategoryListModel.swift */,
 				1C87607720873E2D00164D5E /* GuShiWen.swift */,
+				1C970B992089C7C3008D4456 /* String+util.swift */,
 				1C87606F20872DDC00164D5E /* CategoryDetailViewController.swift */,
 				1C4C4E8920887749006910A7 /* ShiWenDetailViewController.swift */,
+				1C970B9B2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift */,
+				1C970B9D2089E446008D4456 /* CategoryTableCollectionCell.swift */,
+				1C970B9E2089E446008D4456 /* CategoryTableCollectionCell.xib */,
+				1C970B972089786A008D4456 /* YYCommonCell.swift */,
 				1C4C4E8B20887E3C006910A7 /* ShiWenDetailModel.swift */,
 				1C4C4E8D20888064006910A7 /* FanYi.swift */,
 				1C4C4E8F208880F6006910A7 /* TranslationModel.swift */,
@@ -835,6 +850,7 @@
 				1C7A32E020722EF0009EB78F /* demo.css in Resources */,
 				1CB3AECA2071CBC10096C403 /* php.png in Resources */,
 				1C7A32E420722EF0009EB78F /* iconfont.ttf in Resources */,
+				1C970BA02089E446008D4456 /* CategoryTableCollectionCell.xib in Resources */,
 				1C52DA96207F5A2800BD86FB /* ShareSDKUI.bundle in Resources */,
 				1C466434208079E5007BC138 /* MyCollectionViewCell.xib in Resources */,
 				1C8760742087303600164D5E /* CategoryDetailListCell.xib in Resources */,
@@ -916,6 +932,7 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMRefresh/GTMRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
@@ -932,6 +949,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
@@ -957,10 +975,12 @@
 			files = (
 				1C87607020872DDC00164D5E /* CategoryDetailViewController.swift in Sources */,
 				1C450C9C207DEF35000EBBB2 /* InternetSocket.swift in Sources */,
+				1C970B9C2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift in Sources */,
 				1C876076208738AD00164D5E /* CategoryListModel.swift in Sources */,
 				1C450C94207DEF35000EBBB2 /* FDSet.swift in Sources */,
 				1C8C3223207474B3002A5230 /* SocketClientController.swift in Sources */,
 				1C7A32C22071F921009EB78F /* XmlReaderController.swift in Sources */,
+				1C970B982089786A008D4456 /* YYCommonCell.swift in Sources */,
 				1C450CA3207DEF35000EBBB2 /* SynchronousUDPServer.swift in Sources */,
 				1C450C9B207DEF35000EBBB2 /* Select.swift in Sources */,
 				1C450CA5207DEF35000EBBB2 /* UDPClient.swift in Sources */,
@@ -995,6 +1015,7 @@
 				1C450C99207DEF35000EBBB2 /* Pipe.swift in Sources */,
 				1C4C4E8820886903006910A7 /* UIColor+utils.swift in Sources */,
 				1C450CA4207DEF35000EBBB2 /* TCPClient.swift in Sources */,
+				1C970B9A2089C7C3008D4456 /* String+util.swift in Sources */,
 				1C7A32C02071F859009EB78F /* XMLReader.m in Sources */,
 				1C4D406B207CBA5700D2B5F6 /* StringViewController.swift in Sources */,
 				1C4C4E8A20887749006910A7 /* ShiWenDetailViewController.swift in Sources */,
@@ -1025,6 +1046,7 @@
 				1C993789206E35320007A2D8 /* CountDownController.swift in Sources */,
 				1C539B182073749C00EAA9FF /* MusicPlayViewController.swift in Sources */,
 				1C8760732087303600164D5E /* CategoryDetailListCell.swift in Sources */,
+				1C970B9F2089E446008D4456 /* CategoryTableCollectionCell.swift in Sources */,
 				1C4664C82084803C007BC138 /* BASE64ViewController.swift in Sources */,
 				1C8C322B20749859002A5230 /* ImageDetailViewController.swift in Sources */,
 				1C46643D20808CC1007BC138 /* AVPlayerViewController.swift in Sources */,
