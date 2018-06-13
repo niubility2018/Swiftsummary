@@ -15,4 +15,7 @@ target 'swiftsummay' do
     pod 'MJRefresh', '~> 3.1.15.3'
     pod 'YYText', '~> 1.0.7'
     pod 'MBProgressHUD', '~> 1.1.0'
+    pod 'RxSwift', '~> 4.1.2'
+    pod 'RxCocoa', '~> 4.1.2'
+    pod 'RxDataSources', '~> 3.0.2'
 end

@@ -131,6 +131,12 @@
 		1C8C32272074754F002A5230 /* MyTcpSocketServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C32262074754F002A5230 /* MyTcpSocketServer.swift */; };
 		1C8C32292074793A002A5230 /* PhotoLibViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C32282074793A002A5230 /* PhotoLibViewController.swift */; };
 		1C8C322B20749859002A5230 /* ImageDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C8C322A20749859002A5230 /* ImageDetailViewController.swift */; };
+		1C902DE120CF93DA00EBDA4E /* RXSwiftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C902DE020CF93DA00EBDA4E /* RXSwiftViewController.swift */; };
+		1C902DE320CF94A500EBDA4E /* MusicListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C902DE220CF94A500EBDA4E /* MusicListViewModel.swift */; };
+		1C902DE520CF95EF00EBDA4E /* RXMusic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C902DE420CF95EF00EBDA4E /* RXMusic.swift */; };
+		1C902DE820CF976300EBDA4E /* RXMusicCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C902DE620CF976300EBDA4E /* RXMusicCell.swift */; };
+		1C902DE920CF976300EBDA4E /* RXMusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1C902DE720CF976300EBDA4E /* RXMusicCell.xib */; };
+		1C902DEB20CF9D8600EBDA4E /* MusicModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C902DEA20CF9D8600EBDA4E /* MusicModel.swift */; };
 		1C970B982089786A008D4456 /* YYCommonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B972089786A008D4456 /* YYCommonCell.swift */; };
 		1C970B9A2089C7C3008D4456 /* String+util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B992089C7C3008D4456 /* String+util.swift */; };
 		1C970B9C2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C970B9B2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift */; };
@@ -153,6 +159,7 @@
 		1CB3AEC92071CBC10096C403 /* react.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB3AEC02071CBC10096C403 /* react.png */; };
 		1CB3AECA2071CBC10096C403 /* php.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB3AEC12071CBC10096C403 /* php.png */; };
 		1CB3AECB2071CBC10096C403 /* c#.png in Resources */ = {isa = PBXBuildFile; fileRef = 1CB3AEC22071CBC10096C403 /* c#.png */; };
+		1CFF5F2F20BBC72400D6713B /* SwipeBackBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CFF5F2E20BBC72400D6713B /* SwipeBackBaseViewController.swift */; };
 		62BAC480D26DEA1BCA4B65F0 /* Pods_swiftsummay.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */; };
 /* End PBXBuildFile section */
 
@@ -292,6 +299,12 @@
 		1C8C32262074754F002A5230 /* MyTcpSocketServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTcpSocketServer.swift; sourceTree = "<group>"; };
 		1C8C32282074793A002A5230 /* PhotoLibViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibViewController.swift; sourceTree = "<group>"; };
 		1C8C322A20749859002A5230 /* ImageDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageDetailViewController.swift; sourceTree = "<group>"; };
+		1C902DE020CF93DA00EBDA4E /* RXSwiftViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXSwiftViewController.swift; sourceTree = "<group>"; };
+		1C902DE220CF94A500EBDA4E /* MusicListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicListViewModel.swift; sourceTree = "<group>"; };
+		1C902DE420CF95EF00EBDA4E /* RXMusic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXMusic.swift; sourceTree = "<group>"; };
+		1C902DE620CF976300EBDA4E /* RXMusicCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RXMusicCell.swift; sourceTree = "<group>"; };
+		1C902DE720CF976300EBDA4E /* RXMusicCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RXMusicCell.xib; sourceTree = "<group>"; };
+		1C902DEA20CF9D8600EBDA4E /* MusicModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicModel.swift; sourceTree = "<group>"; };
 		1C970B972089786A008D4456 /* YYCommonCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YYCommonCell.swift; sourceTree = "<group>"; };
 		1C970B992089C7C3008D4456 /* String+util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+util.swift"; sourceTree = "<group>"; };
 		1C970B9B2089E20C008D4456 /* CategoryTableAndCollectionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableAndCollectionTableCell.swift; sourceTree = "<group>"; };
@@ -314,6 +327,7 @@
 		1CB3AEC02071CBC10096C403 /* react.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = react.png; sourceTree = "<group>"; };
 		1CB3AEC12071CBC10096C403 /* php.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = php.png; sourceTree = "<group>"; };
 		1CB3AEC22071CBC10096C403 /* c#.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "c#.png"; sourceTree = "<group>"; };
+		1CFF5F2E20BBC72400D6713B /* SwipeBackBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeBackBaseViewController.swift; sourceTree = "<group>"; };
 		2D62A461A11AA5B1C912D3BF /* Pods-swiftsummay.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftsummay.release.xcconfig"; path = "Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay.release.xcconfig"; sourceTree = "<group>"; };
 		5760D03BA6A296229BEF11A1 /* Pods_swiftsummay.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_swiftsummay.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7634766B891A0EF4F19EC585 /* Pods-swiftsummay.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-swiftsummay.debug.xcconfig"; path = "Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay.debug.xcconfig"; sourceTree = "<group>"; };
@@ -459,6 +473,7 @@
 		1C4D17742059236500001419 /* swiftsummay */ = {
 			isa = PBXGroup;
 			children = (
+				1C902DDD20CF91C200EBDA4E /* day11 */,
 				1C8760662087137D00164D5E /* day10 */,
 				1C4664C420847DD1007BC138 /* day9 */,
 				1C46642220805C2C007BC138 /* day8 */,
@@ -474,6 +489,7 @@
 				1C993779206DCED80007A2D8 /* day1 */,
 				1C4D17752059236500001419 /* AppDelegate.swift */,
 				1C4D17772059236600001419 /* ViewController.swift */,
+				1CFF5F2E20BBC72400D6713B /* SwipeBackBaseViewController.swift */,
 				1C814B052088292D00DAFB21 /* Channel.swift */,
 				1C814B072088297E00DAFB21 /* Music.swift */,
 				1C484115205A3A10004F53BF /* DouBanAPI.swift */,
@@ -716,6 +732,19 @@
 			path = day4;
 			sourceTree = "<group>";
 		};
+		1C902DDD20CF91C200EBDA4E /* day11 */ = {
+			isa = PBXGroup;
+			children = (
+				1C902DE220CF94A500EBDA4E /* MusicListViewModel.swift */,
+				1C902DE020CF93DA00EBDA4E /* RXSwiftViewController.swift */,
+				1C902DE620CF976300EBDA4E /* RXMusicCell.swift */,
+				1C902DE720CF976300EBDA4E /* RXMusicCell.xib */,
+				1C902DE420CF95EF00EBDA4E /* RXMusic.swift */,
+				1C902DEA20CF9D8600EBDA4E /* MusicModel.swift */,
+			);
+			path = day11;
+			sourceTree = "<group>";
+		};
 		1C993779206DCED80007A2D8 /* day1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -858,6 +887,7 @@
 				1C52DA9A207F5A2800BD86FB /* ShareSDKConfigFile.bundle in Resources */,
 				1C52DA8F207F5A2800BD86FB /* WeiboSDK.bundle in Resources */,
 				1C52DA91207F5A2800BD86FB /* README.txt in Resources */,
+				1C902DE920CF976300EBDA4E /* RXMusicCell.xib in Resources */,
 				1C46643E20808CC1007BC138 /* AVPlayerViewController.xib in Resources */,
 				1C7A32E120722EF0009EB78F /* iconfont.woff in Resources */,
 				1C7A32E520722EF0009EB78F /* demo_unicode.html in Resources */,
@@ -915,7 +945,7 @@
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/WeiboSDK.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -930,6 +960,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-swiftsummay/Pods-swiftsummay-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMRefresh/GTMRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
@@ -938,6 +969,9 @@
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 				"${BUILT_PRODUCTS_DIR}/StreamingKit/StreamingKit.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftSocket/SwiftSocket.framework",
@@ -947,6 +981,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
@@ -955,6 +990,9 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/StreamingKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftSocket.framework",
@@ -998,6 +1036,7 @@
 				1C48411A205A572C004F53BF /* Network.swift in Sources */,
 				1C450C9E207DEF35000EBBB2 /* SocketOptions.swift in Sources */,
 				1C450CA1207DEF35000EBBB2 /* Socket.swift in Sources */,
+				1C902DE120CF93DA00EBDA4E /* RXSwiftViewController.swift in Sources */,
 				1C450C97207DEF35000EBBB2 /* Error.swift in Sources */,
 				1C87606A2087158D00164D5E /* ShiWenCollectionCell.swift in Sources */,
 				1C450C9F207DEF35000EBBB2 /* Bytes.swift in Sources */,
@@ -1007,6 +1046,7 @@
 				1C4664CA208482D5007BC138 /* OCRViewController.swift in Sources */,
 				1C4D17782059236600001419 /* ViewController.swift in Sources */,
 				1C4C4E8E20888064006910A7 /* FanYi.swift in Sources */,
+				1C902DEB20CF9D8600EBDA4E /* MusicModel.swift in Sources */,
 				1C450CA0207DEF35000EBBB2 /* Types.swift in Sources */,
 				1C87606C208717CE00164D5E /* ShiWenSectionHeadView.swift in Sources */,
 				1C46643020807962007BC138 /* LoopCollectionViewLayout.swift in Sources */,
@@ -1023,6 +1063,7 @@
 				1C450C9D207DEF35000EBBB2 /* UDPSocket.swift in Sources */,
 				1C87606E208718F200164D5E /* Constant.swift in Sources */,
 				1C450CA2207DEF35000EBBB2 /* SynchronousTCPServer.swift in Sources */,
+				1C902DE820CF976300EBDA4E /* RXMusicCell.swift in Sources */,
 				1C450C9A207DEF35000EBBB2 /* Address+C.swift in Sources */,
 				1C8C3225207474C5002A5230 /* SocketServerController.swift in Sources */,
 				1C539B0020731E6400EAA9FF /* TileView.swift in Sources */,
@@ -1037,6 +1078,7 @@
 				1C4D17762059236500001419 /* AppDelegate.swift in Sources */,
 				1C8C32292074793A002A5230 /* PhotoLibViewController.swift in Sources */,
 				1C450C95207DEF35000EBBB2 /* Address.swift in Sources */,
+				1C902DE520CF95EF00EBDA4E /* RXMusic.swift in Sources */,
 				1C466433208079E5007BC138 /* MyCollectionViewCell.swift in Sources */,
 				1C4C4E96208882EF006910A7 /* Author.swift in Sources */,
 				1C52DA6D207F496E00BD86FB /* WeiBoViewController.swift in Sources */,
@@ -1050,8 +1092,10 @@
 				1C4664C82084803C007BC138 /* BASE64ViewController.swift in Sources */,
 				1C8C322B20749859002A5230 /* ImageDetailViewController.swift in Sources */,
 				1C46643D20808CC1007BC138 /* AVPlayerViewController.swift in Sources */,
+				1CFF5F2F20BBC72400D6713B /* SwipeBackBaseViewController.swift in Sources */,
 				1C814B062088292D00DAFB21 /* Channel.swift in Sources */,
 				1C7A32D3207210CF009EB78F /* JSONViewController.swift in Sources */,
+				1C902DE320CF94A500EBDA4E /* MusicListViewModel.swift in Sources */,
 				1CB3AEB82071C0010096C403 /* CustomLayout.swift in Sources */,
 				1C539B0A2073481F00EAA9FF /* ViewFactoryController.swift in Sources */,
 				1C4C4E992088878D006910A7 /* CommonTextCell.swift in Sources */,
